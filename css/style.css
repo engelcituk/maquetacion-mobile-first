@@ -163,6 +163,7 @@ main {
     min-width: 235px;
     max-width: 500px;
     height: 250px;
+    /* height: auto; */
     margin: 0 auto;
     font-family: "Inter", sans-serif;
 
@@ -261,5 +262,49 @@ main {
     font-weight: 300;
     line-height: 1.5rem;
     color: var(--warm-black);
+}
+
+.main-product-detail{
+    position: relative; /*Porque uno de sus hijos va usar position relative, */
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    padding: 20px 10px;
+    background-color: var(--warm-black);
+}
+
+.product-detail--batata-logo {
+    position: absolute; /*el padre de product-detail--batata-logo es relative*/
+    width: 40px;
+    height: 25px;
+    top: -10px;
+    left: calc(50% - 20px);
+    background-image: url('./../assets/icons/batata.svg');
+}
+
+.product-detail--title{
+    width: 90%;
+    min-width: 288px;
+    height: auto;
+    margin: 50px auto 0 auto;
+    /* margin-top: 50px; */
+    text-align: center;
+}
+
+.product-detail--title h2 {
+    margin-bottom: 20px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    line-height: 2.6rem;
+    color: var(--just-white);
+}
+
+.product-detail--title p {
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8;
+    color: #808080;
+
 }
 
