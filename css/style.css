@@ -436,6 +436,12 @@ main {
     border-radius: 8px;
     color: var(--just-white);
 }
+.basic{
+    background-color: var(--secondary-blue);
+}
+.expert{
+    background-color: var(--black);
+}
 
 .plan-card--title {
     padding-top: 30px;
@@ -457,4 +463,28 @@ main {
     font-size: 1.2rem;
     font-weight: 300;
     vertical-align: 25px;
+}
+
+.plan-card--ca {
+    width: 150px;
+    height: 48px;
+    margin-top: 20px;
+    background-color: #faf8f7;
+    border: 2px solid var(--bitcoin-orange);
+    border-radius: 4px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    line-height: 1.8rem;
+    color: var(--black);
+    cursor: pointer;
+    outline: none;
+}
+
+.plan-card--ca span {
+    display: inline-block; /*Usamos display: inline-block para que se mantengan en la misma línea que el texto.*/
+    width: 20px;
+    height: 20px;
+    background-image: url("./../assets/icons/orange-right-arrow.svg");
+    vertical-align: text-bottom; /*Para poder colocar el ícono a la misma altura del texto, usamos vertical-align: text-bottom.*/
 }
