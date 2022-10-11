@@ -413,10 +413,16 @@ main {
 .plans-container--slider{
     display: flex;
     height: 316px;
+    margin: 0 30px;
     /* gap: 50px; */
     overflow-x:scroll;
+    overflow-y: hidden;
     overscroll-behavior-x: contain;
     scroll-snap-type: x proximity;
+    scrollbar-width: none;
+}
+.plans-container--slider::-webkit-scrollbar {
+    display: none;
 }
 
 .plans-container--card {
@@ -499,3 +505,31 @@ main {
     vertical-align: text-bottom; /*Para poder colocar el ícono a la misma altura del texto, usamos vertical-align: text-bottom.*/
 }
 
+footer {
+    display: flex;
+    width: 100%;
+    height: 150px;
+    background-color: var(--bitcoin-orange);
+}
+
+footer section {
+    display: flex;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .left ul {
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    list-style: none;
+}
+
+.left li {
+    margin: 10px 0;
+}
+.left a {
+    text-decoration: none;
+    color: var(--just-white);
+}
